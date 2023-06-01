@@ -1,0 +1,83 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+:root{/* variáveis */
+
+    --lavanda: #cdb4db;
+    --verdao: #19535F;
+    --verde: #0B7A75;
+    --dia: #A8DADC;
+    --noite: #160F29;
+    --sombra: rgba(0, 0, 0, .212);
+    --fontea: 'Alegreya'; /* fonte de parágrafo */
+    --fonteA: 'Merriweather'; /* fonte do título */
+
+}
+
+*{
+
+    margin: 0%; /* elimina as margens automáticas */
+    padding: 0%; /* alimina padding automático */
+    margin-bottom: 0.4rem; /*espaçamento entre paragrafos*/
+
+}
+
+body{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+::selection{ /* ao selecionar o texto dentro do site, a seleção fica com a cor personalizada */
+
+    background-color: var(--dia);
+    color: #19535F;
+
+}
+
+p{
+
+    font-family: var(--fontea);
+
+}
+
+h1, h2, h3{
+
+    font-family: var(--fonteA);
+
+}
+
+header {
+    width: 100%;
+    background-color: rgb(5, 3, 3);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 var(--sombra);
+}
+
+header > a {
+
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+header > a:hover{
+
+    
+
+}
+    
+header > img#logo {
+    width: 40px;
+}
+
+@media(){}
