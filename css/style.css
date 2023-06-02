@@ -18,7 +18,7 @@
 *{
 
     margin: 0%; /* elimina as margens automáticas */
-    padding: 0%; /* alimina padding automático */
+    padding: 0%; /* elimina padding automático */
     margin-bottom: 0.4rem; /*espaçamento entre paragrafos*/
 
 }
@@ -31,6 +31,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+}
+
+div, section{
+
+    margin: 0%;
+    padding: 0%;
 
 }
 
@@ -54,44 +61,47 @@ h1, h2, h3{
 }
 
 header {
+
+    position: sticky; /* pra header se mover com o scroll */
     width: 100%;
-    background-color: var(--verde);
-    padding: 10px;
+    background-color: var(--noite);
     display: flex;
     align-items: center;
     box-shadow: 0 1px 3px 0 var(--sombra);
-}
-
-header > a {
-
-    color: white;
-    padding: 5px;
-    text-decoration: none;
 
 }
 
-header > a:hover{
-
-    
-
-}
-    
-header > img#logo {
+img#logo, #hb, #bs {
 
     width: 20px;
+    height: 20px;
     position: relative;
-    left: -200;
+    padding: 10px;
+    margin: 0%;
 
 }
 
-header > nav{
+nav > button{
 
-    justify-content: end;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
 
 }
 
 @media(min-width: 834px){
 
+    header > a {
+
+        color: white;
+        padding: 5px;
+        text-decoration: none;
     
+    }
+    
+    header > a:hover{
+    
+        
+    
+    }
 
 }
