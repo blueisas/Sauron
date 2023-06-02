@@ -11,7 +11,7 @@
     --noite: #160F29;
     --sombra: rgba(0, 0, 0, .212);
     --fontea: 'Alegreya'; /* fonte de parágrafo */
-    --fonteA: 'Merriweather'; /* fonte do título */
+    --fonteA: 'Merriweather'; /* fonte de título */
 
 }
 
@@ -55,7 +55,7 @@ h1, h2, h3{
 
 header {
     width: 100%;
-    background-color: rgb(5, 3, 3);
+    background-color: var(--verde);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -77,7 +77,21 @@ header > a:hover{
 }
     
 header > img#logo {
-    width: 40px;
+
+    width: 20px;
+    position: relative;
+    left: -200;
+
 }
 
-@media(){}
+header > nav{
+
+    justify-content: end;
+
+}
+
+@media(min-width: 834px){
+
+    
+
+}
