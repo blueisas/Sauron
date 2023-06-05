@@ -5,6 +5,7 @@
 :root{/* variáveis */
 
     --lavanda: #cdb4db;
+    --select: #cdb4dba9;
     --verdao: #19535F;
     --verde: #0B7A75;
     --dia: #669bbc;
@@ -40,7 +41,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-x:hidden ;
 
 }
 
@@ -53,8 +53,8 @@ div, section{
 
 ::selection{ /* ao selecionar o texto dentro do site, a seleção fica com a cor personalizada */
 
-    background-color: var(--dia);
-    color: #19535F;
+    background-color: var(--select);
+    color: var(--noite);
 
 }
 
@@ -90,7 +90,7 @@ img#logo {
     width: 20px;
     position: relative;
     margin: 0;
-    left: 7vw;
+    left: 4vw;
     top: 25px;
 
 }
@@ -99,7 +99,7 @@ img#bs {
 
     width: 23px;
     position: relative;
-    left: 89vw;
+    left: 85vw;
 
 }
 
@@ -107,7 +107,7 @@ img#hb {
 
     width: 20px;
     position: relative;
-    left: 89vw;
+    left: 85vw;
 
 }
 
@@ -145,15 +145,15 @@ img#oculos{
     
 }
 
-#sec2{
+#sec2, #sec3, #sec4{
 
     background-color: var(--nublado);
     height: auto;
-    text-align: start;
     width: 100%;
+
 }
 
-.container-sec2{
+.container-sec3{
     
     background-color: var(--dia);
     width: 70vw;
@@ -163,30 +163,30 @@ img#oculos{
     text-align: justify;
 
 }
+.sobre, .video, .contato{
 
-#sec3{
-    background-color: var(--nublado);
-    height: auto;
-    text-align: justify;
+    width: 70vw;
+    margin: auto;
     padding: 2em;
+    text-align: justify;
+
+}
+
+.video, .contato{
+
+    text-align: center;
+    font-size: x-small;
+
 }
 
 footer{
 
     background-color: var(--noite);
-    width: 100%;
     height: auto;
     color: var(--nublado);
     text-align: center;
-    padding: 2em;
     margin: 0;
-
-}
-
-footer > p{
-
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 100%;
 
 }
 
@@ -206,13 +206,7 @@ nav > button{
     
     }
     
-    img#bs {
-    
-        left: 74vw;
-    
-    }
-    
-    img#hb {
+    img#bs, img#hb {
     
         left: 74vw;
     
@@ -225,29 +219,10 @@ nav > button{
     
     }
 
-    .container-sec2{
+    .container-sec3, .sobre, .video{
         
         width: 50vw;
-        margin-bottom: 2em;
     
-    }
-
-    .sobre{
-
-        border-radius: 15px;
-        width: 70vw;
-        margin: auto;
-        padding: 2em;
-        text-align: justify;
-
-    }
-
-    #sec3{
-
-        width: 100%;
-        margin: auto;
-        height: auto;
-
     }
 
 }
