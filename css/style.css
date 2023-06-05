@@ -41,6 +41,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--nublado);
 
 }
 
@@ -150,6 +151,7 @@ img#oculos{
     background-color: var(--nublado);
     height: auto;
     width: 100%;
+    margin-bottom: 10vh;
 
 }
 
@@ -165,7 +167,7 @@ img#oculos{
 }
 .sobre, .video, .contato{
 
-    width: 70vw;
+    width: 78vw;
     margin: auto;
     padding: 2em;
     text-align: justify;
@@ -176,6 +178,13 @@ img#oculos{
 
     text-align: center;
     font-size: x-small;
+
+}
+
+.video{
+
+    height: 30vh;
+    max-width: 78%;
 
 }
 
@@ -219,10 +228,16 @@ nav > button{
     
     }
 
-    .container-sec3, .sobre, .video{
+    .container-sec3{
         
         width: 50vw;
     
+    }
+
+    .sobre, .video{
+
+        width: 53vw;
+
     }
 
 }
