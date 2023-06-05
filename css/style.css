@@ -25,6 +25,13 @@
 
 }
 
+html{
+
+    margin: 0;
+    padding: 0;
+
+}
+
 body{
 
     width: 100%;
@@ -172,6 +179,7 @@ footer{
     color: var(--nublado);
     text-align: center;
     padding: 2em;
+    margin: 0;
 
 }
 
@@ -210,16 +218,35 @@ nav > button{
     
     }
 
+    div#SauronGlassDesc{
+
+        text-align: center;
+        margin: 10vw;
+    
+    }
+
     .container-sec2{
-    
+        
         width: 50vw;
+        margin-bottom: 2em;
     
+    }
+
+    .sobre{
+
+        border-radius: 15px;
+        width: 70vw;
+        margin: auto;
+        padding: 2em;
+        text-align: justify;
+
     }
 
     #sec3{
 
+        width: 100%;
+        margin: auto;
         height: auto;
-        width: 50vw;
 
     }
 
